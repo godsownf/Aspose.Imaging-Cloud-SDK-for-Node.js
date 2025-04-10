@@ -182,7 +182,7 @@ class SearchContextTests extends TestImagingAIBase {
 
                 await this.waitSearchContextIdle();
 
-                const imageUrl =  encodeURI("https://cdn.f1ne.ws/userfiles/hamilton/140909.jpg");
+                const imageUrl =  encodeURI("https://c.f1news.ru/userfiles/hamilton/140909.jpg");
                 const response = await this.imagingApi.getImageFeatures(new imaging.GetImageFeaturesRequest({
                     searchContextId: this.SearchContextId, imageId: imageUrl, storage: this.TestStorage }));
 
